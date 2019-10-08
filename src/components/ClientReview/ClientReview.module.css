@@ -29,7 +29,7 @@
   background-size: cover;
 }
 
-/* Media queries */
+/* Media queries; for parallax effect comment out this section */
 @media (min-width: 500px) {
   .ClientReview {
       width: 700px;
