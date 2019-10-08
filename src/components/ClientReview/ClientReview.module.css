@@ -1,3 +1,4 @@
+/* Main div */
 .ClientReview {
   width: 70%;
   margin: 16px auto;
@@ -14,6 +15,7 @@
   font-family: cursive;
 }
 
+/* Code for backgroud image of the main div */
 .ClientReview::after {
   content: "";
   background: url("../../assets/review.jpg");
@@ -27,6 +29,7 @@
   background-size: cover;
 }
 
+/* Media queries */
 @media (min-width: 500px) {
   .ClientReview {
       width: 700px;
