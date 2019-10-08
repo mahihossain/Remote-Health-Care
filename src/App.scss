@@ -1,0 +1,8 @@
+@import "./_include-grid.scss";
+@import "./include-media.scss";
+
+.stopOverflow {
+    overflow: hidden;
+    position: relative;
+    height: 111vh;
+}

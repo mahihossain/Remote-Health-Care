@@ -1,37 +1,36 @@
 import React, { Component } from 'react'
-import './module.nav.scss'
+import styles from './nav.module.scss'
 
 class Nav extends Component {
 	navSlide = () => {
 		//getting all the dom elements
-		const burger = document.getElementsByClassName('Burger')
+		const burger = document.getElementById('Burger')
 		const wrapper = document.getElementById('wrapper')
 		const listElement = document
 			.getElementById('wrapper')
 			.getElementsByTagName('li')
 
 		// toggling animation
-		wrapper.classList.toggle('animate-nav')
-		burger[0].classList.toggle('toggle')
+		wrapper.classList.toggle(styles.animateNav)
+		burger.classList.toggle(styles.toggle)
 
 		//adding fade in animation for nav links
 		for (let i = 0; i < listElement.length; i++) {
 			if (listElement[i].style.animation) {
 				listElement[i].style.animation = ''
 			} else {
-				listElement[
-					i
-				].style.animation = `navLinkFade 0.5s ease forwards ${i / 7 +
-					0.5}s `
+				listElement[i].style.animation = `${
+					styles.navLinkFade
+				} 0.5s ease forwards ${i / 7 + 0.5}s `
 			}
 		}
 	}
 	render() {
 		return (
 			<React.Fragment>
-				<div className="mobile">
-					<nav className="Nav-class">
-						<div className="Logo">
+				<div className={styles.stopOverflow}>
+					<nav className={styles.navClass}>
+						<div className={styles.Logo}>
 							<h4>The Nav</h4>
 						</div>
 						<ul id="wrapper">
@@ -51,7 +50,10 @@ class Nav extends Component {
 								<a href="/">Connect</a>
 							</li>
 						</ul>
-						<div className="Burger" onClick={this.navSlide}>
+						<div
+							id="Burger"
+							className={styles.Burger}
+							onClick={this.navSlide}>
 							<div className="Line1"></div>
 							<div className="Line2"></div>
 							<div className="Line3"></div>

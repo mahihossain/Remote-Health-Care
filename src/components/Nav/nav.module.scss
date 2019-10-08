@@ -1,4 +1,4 @@
-@import "_include-media";
+@import "../../include-media";
 
 * {
     margin: 0px;
@@ -26,6 +26,7 @@ body {
     text-transform: uppercase;
     opacity: 0.8;
     padding-left: 50px;
+    cursor: pointer;
 }
 
 //burger icon for nav
@@ -43,15 +44,15 @@ body {
         div {
             width: 30px;
             height: 2px;
-            background-color: white;
+            background-color: #2f2f2f;
             margin: 5px;
             transition: all 0.3s ease;
         }
     }
 }
 
-.Nav-class {
-    background-color: #282c34;
+.navClass {
+    background-color: transparent;
     min-height: 10.26vh;
     display: flex;
     align-items: center;
@@ -72,19 +73,21 @@ body {
             right: 0px;
             height: 90vh;
             top: 10vh;
-            background-color: #282c34;
-            display: none;
+            background-color: transparent;
+            // display: none;
             flex-direction: column;
             align-items: center;
             width: 50%;
             transform: translateX(100%);
-            transition: transform 2s ease-in;
-
+            transition: transform 0.8s ease-in;
+            z-index: 1;
+            background: rgba(246, 248, 248, 0.699)
         }
 
         li {
             text-decoration: none;
-            color: white;
+            color: #2f2f2f;
+            font-weight: 500;
 
             &:hover {
                 cursor: pointer;
@@ -96,14 +99,19 @@ body {
 
             a {
                 text-decoration: none;
-                color: white;
+                color: #2f2f2f;
+                opacity: 1;
+
+                &:hover {
+                    font-weight: bold;
+                }
             }
         }
     }
 }
 
 //animation for nav
-.animate-nav {
+.animateNav {
     transition: transform 0.5s ease-in;
 
     transform: translateX(0%) !important;
