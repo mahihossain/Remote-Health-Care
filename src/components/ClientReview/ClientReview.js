@@ -1,14 +1,14 @@
-import React from "react";
-import styles from "./ClientReview.module.css";
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import React from 'react';
+import styles from './ClientReview.module.css';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 
-const ClientReview = props => {
+const ClientReview = (props) => {
   return (
     <div className={styles.ClientReview}>
       <ParallaxProvider>
-        <Parallax className="parallax" x={[-1700, 300]} tagOuter="figure">
+        <Parallax className='parallax' x={[-1700, 300]} tagOuter='figure'>
           <h1>Review</h1>
           <Carousel
             useKeyboardArrows={true}
@@ -17,8 +17,8 @@ const ClientReview = props => {
             showThumbs={false}
           >
             <div>
-              <img src={props.Image} alt="" />
-              <p className="legend">
+              <img src={props.Image} alt='' />
+              <p className='legend'>
                 Velit magna qui ea magna adipisicing aute in consectetur. Est
                 amet in occaecat in. Ullamco sint incididunt velit qui
                 incididunt duis culpa tempor est cupidatat cillum ullamco
@@ -30,8 +30,8 @@ const ClientReview = props => {
               </p>
             </div>
             <div>
-              <img src={props.Image} alt="" />
-              <p className="legend">
+              <img src={props.Image} alt='' />
+              <p className='legend'>
                 Enim mollit et laborum dolor occaecat. Adipisicing veniam
                 adipisicing dolore ullamco velit sint et excepteur minim
                 deserunt mollit. Deserunt nostrud veniam nulla ut ex sint sunt
@@ -41,8 +41,8 @@ const ClientReview = props => {
               </p>
             </div>
             <div>
-              <img src={props.Image} alt="" />
-              <p className="legend">
+              <img src={props.Image} alt='' />
+              <p className='legend'>
                 Proident anim proident ullamco non laborum nostrud eiusmod.
                 Culpa cupidatat aliquip ipsum non cillum Lorem velit proident
                 consectetur cillum deserunt minim eiusmod. Voluptate dolore ex

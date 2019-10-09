@@ -15,8 +15,8 @@
 }
 
 .Team::after {
-  content: "";
-  background: url("../../assets/ClientReview/review.jpg");
+  content: '';
+  background: url('../../assets/ClientReview/review.jpg');
   opacity: 0.3;
   top: 0;
   left: 0;
@@ -27,9 +27,8 @@
   background-size: cover;
 }
 
-
 @media (min-width: 500px) {
   .Team {
-      width: 900px;
-    }
+    width: 900px;
+  }
 }

@@ -1,12 +1,12 @@
-import React from "react";
-import styles from "./OurTeam.module.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import React from 'react';
+import styles from './OurTeam.module.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 
-const Team = props => {
+const Team = (props) => {
   return (
     <div className={styles.Team}>
-        <h1>Our Expert Team</h1>
+      <h1>Our Expert Team</h1>
       <Carousel
         useKeyboardArrows={true}
         showThumbs={false}
@@ -14,8 +14,8 @@ const Team = props => {
         showIndicators={false}
       >
         <div>
-          <img src={props.Image} alt="" />
-          <p className="legend">
+          <img src={props.Image} alt='' />
+          <p className='legend'>
             Velit magna qui ea magna adipisicing aute in consectetur. Est amet
             in occaecat in. Ullamco sint incididunt velit qui incididunt duis
             culpa tempor est cupidatat cillum ullamco deserunt Lorem. Dolor
@@ -27,8 +27,8 @@ const Team = props => {
           </p>
         </div>
         <div>
-          <img src={props.Image} alt="" />
-          <p className="legend">
+          <img src={props.Image} alt='' />
+          <p className='legend'>
             Enim mollit et laborum dolor occaecat. Adipisicing veniam
             adipisicing dolore ullamco velit sint et excepteur minim deserunt
             mollit. Deserunt nostrud veniam nulla ut ex sint sunt pariatur.
@@ -38,8 +38,8 @@ const Team = props => {
           </p>
         </div>
         <div>
-          <img src={props.Image} alt="" />
-          <p className="legend">
+          <img src={props.Image} alt='' />
+          <p className='legend'>
             Proident anim proident ullamco non laborum nostrud eiusmod. Culpa
             cupidatat aliquip ipsum non cillum Lorem velit proident consectetur
             cillum deserunt minim eiusmod. Voluptate dolore ex ipsum cupidatat
