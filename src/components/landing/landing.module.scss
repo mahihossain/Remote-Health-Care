@@ -9,6 +9,8 @@
 
 }
 
+
+
 @include media("<tablet") {
     .is_7 {
         flex: 0 0 100% !important;
@@ -35,6 +37,7 @@
 .is_5 {
     color: #464141;
     align-self: center;
+    margin-bottom: 12%;
 
     @include media("<tablet") {
         flex: 0 0 100% !important;
