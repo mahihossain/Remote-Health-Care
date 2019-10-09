@@ -8,7 +8,7 @@ const ClientReview = props => {
   return (
     <div className={styles.ClientReview}>
       <ParallaxProvider>
-        <Parallax className="parallax" y={[-50, 10]} tagOuter="figure">
+        <Parallax className="parallax" x={[-1700, 300]} tagOuter="figure">
           <h1>Review</h1>
           <Carousel
             useKeyboardArrows={true}
