@@ -14,6 +14,7 @@ const ClientReview = props => {
             useKeyboardArrows={true}
             autoPlay={true}
             infiniteLoop={true}
+            showThumbs={false}
           >
             <div>
               <img src={props.Image} alt="" />
