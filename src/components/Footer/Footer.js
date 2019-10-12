@@ -5,29 +5,33 @@ import { FaFacebookMessenger } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 class Footer extends Component {
+	handleSmoothScroll = () => {
+		document.querySelector('#TOP').scrollIntoView({ behavior: 'smooth' });
+		console.log('done');
+	};
+	// componentDidMount = () => {
+	// 	// const handleSmoothScroll = () => {
+	// 	// 	document
+	// 	// 		.querySelector('#navBar')
+	// 	// 		.scrollIntoView({ behavior: 'smooth' });
+	// 	// 	console.log('done');
+	// 	// };
+	// 	// handleSmoothScroll();
+	// };
 	render() {
 		return (
 			<div className={styles.Bottom}>
 				<div className={styles.firstFooterBox}>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Impedit nisi esse expedita, tenetur autem praesentium
-						quis nihil, voluptatem repudiandae veritatis at
-						molestias quas eius deleniti earum, recusandae ducimus
-						voluptate deserunt?
-					</p>
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit. Assumenda sunt perferendis soluta consequuntur
-						dolor adipisci, sapiente dicta exercitationem culpa
-						ducimus, harum veniam unde temporibus mollitia minima!
-						Aut, optio itaque. Veritatis.
-					</p>
+					<a href="#TOP">About</a>
+					<a href="#TOP">Need Help?</a>
+					<a href="#TOP">Privacy</a>
 				</div>
 				<div className={styles.secondFooterBox}>
 					<div>
-						Using react-icons package, color of icons can be
-						changed.
+						<p>
+							Using react-icons package, color of icons can be
+							changed.
+						</p>
 					</div>
 					<ul>
 						<li>
@@ -35,28 +39,36 @@ class Footer extends Component {
 								{''}
 								<FaFacebookF />
 							</i>
-							<a href="/">Facebook</a>
+							<a onClick={this.handleSmoothScroll} href="#TOP">
+								Facebook
+							</a>
 						</li>
 						<li>
 							<i>
 								{''}
 								<FaFacebookMessenger />
 							</i>
-							<a href="/">Messenger</a>
+							<a onClick={this.handleSmoothScroll} href="#TOP">
+								Messenger
+							</a>
 						</li>
 						<li>
 							<i>
 								{''}
 								<FaTwitter />
 							</i>
-							<a href="/">Twitter</a>
+							<a onClick={this.handleSmoothScroll} href="#TOP">
+								Twitter
+							</a>
 						</li>
 						<li>
 							<i>
 								{''}
 								<FaWhatsapp />
 							</i>
-							<a href="/">WhatsApp</a>
+							<a onClick={this.handleSmoothScroll} href="#TOP">
+								WhatsApp
+							</a>
 						</li>
 					</ul>
 				</div>
