@@ -33,12 +33,14 @@ class Nav extends Component {
 
 	handleScroll = () => {
 		const nav = document.getElementById('navBar');
-
+		const wrapper = document.getElementById('wrapper');
 		window.onscroll = () => {
 			if (window.pageYOffset >= 547) {
 				nav.classList.add(styles.sticky);
+				wrapper.classList.add(styles.navSlideChange);
 			} else {
 				nav.classList.remove(styles.sticky);
+				wrapper.classList.remove(styles.navSlideChange);
 			}
 		};
 	};
