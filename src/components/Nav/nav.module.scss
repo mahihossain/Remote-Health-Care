@@ -110,6 +110,13 @@ body {
     }
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(63, 155, 155, 0.699);
+}
+
 //animation for nav
 .animateNav {
     transition: transform 0.5s ease-in;
