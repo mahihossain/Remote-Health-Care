@@ -11,7 +11,6 @@ class App extends Component {
 				<div className="stopOverflow">
 					<Nav></Nav>
 					<Landing></Landing>
-
 					<Footer></Footer>
 				</div>
 			</React.Fragment>
