@@ -72,7 +72,7 @@ body {
             position: absolute;
             right: 0px;
             height: 90vh;
-            top: 10vh;
+            top: 10.2vh;
             background-color: transparent;
             // display: none;
             flex-direction: column;
@@ -110,10 +110,25 @@ body {
     }
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(63, 155, 155, 0.5);
+    z-index: 1;
+}
+
+.navSlideChange {
+    @include media ("<tablet") {
+        background-color: rgba(63, 155, 155, 0.5) !important;
+
+    }
+
+}
+
 //animation for nav
 .animateNav {
     transition: transform 0.5s ease-in;
-
     transform: translateX(0%) !important;
     display: flex !important;
 }
