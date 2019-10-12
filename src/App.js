@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 // import './App.min.css'
 import Nav from './components/Nav/Nav';
@@ -17,6 +18,9 @@ class App extends Component {
 			</React.Fragment>
 		);
 	}
+
+
+
 }
 
-export default App;
+export default App
