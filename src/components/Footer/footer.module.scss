@@ -3,7 +3,7 @@
 
 .Bottom {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.034);
+    background-color: rgba(128, 99, 255, 0.5);
     position: relative;
     min-height: 400px;
     margin-bottom: 0;
@@ -30,6 +30,10 @@
 
     p {
         padding: 50px;
+
+        @include media ("<tablet") {
+            padding: 10px;
+        }
 
         @include media ("<tablet") {
             margin: 20px 20px;
@@ -75,6 +79,13 @@
         li {
             list-style: none;
             margin: 0 auto;
+
+            @include media ("<tablet") {
+
+                margin-bottom: 10px;
+
+            }
+
         }
     }
 
