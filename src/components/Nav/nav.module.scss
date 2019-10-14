@@ -145,14 +145,18 @@ body {
     }
 }
 
-.toggle .Line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+
+
+.Line1 {
+    transform: rotate(-45deg) translate(-7px, 7px);
 }
 
-.toggle .Line2 {
+
+
+.Line2 {
     opacity: 0;
 }
 
-.toggle .Line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+.Line3 {
+    transform: rotate(45deg) translate(-3px, -4px);
 }

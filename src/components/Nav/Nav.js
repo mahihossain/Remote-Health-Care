@@ -1,21 +1,27 @@
+/* eslint-disable react/jsx-closing-bracket-location */
 import React, { Component } from 'react';
 import styles from './nav.module.scss';
 
 class Nav extends Component {
 	navSlide = () => {
-		//getting all the dom elements
-		const burger = document.getElementById('Burger');
+		// getting all the dom elements
+		const burger = document
+			.getElementById('Burger')
+			.getElementsByTagName('div');
+
 		const wrapper = document.getElementById('wrapper');
 
 		const listElement = document
 			.getElementById('wrapper')
 			.getElementsByTagName('li');
 
-		// toggling animation
+		//  toggling animation
 		wrapper.classList.toggle(styles.animateNav);
-		burger.classList.toggle(styles.toggle);
+		burger[0].classList.toggle(styles.Line1);
+		burger[1].classList.toggle(styles.Line2);
+		burger[2].classList.toggle(styles.Line3);
 
-		//adding fade in animation for nav links
+		//  adding fade in animation for nav links
 		for (let i = 0; i < listElement.length; i++) {
 			if (listElement[i].style.animation) {
 				listElement[i].style.animation = '';
@@ -44,6 +50,7 @@ class Nav extends Component {
 			}
 		};
 	};
+
 	render() {
 		return (
 			<React.Fragment>
@@ -72,10 +79,13 @@ class Nav extends Component {
 						<div
 							id="Burger"
 							className={styles.Burger}
-							onClick={this.navSlide}>
-							<div className="Line1"></div>
-							<div className="Line2"></div>
-							<div className="Line3"></div>
+							role="button"
+							tabIndex={0}
+							onClick={this.navSlide}
+							onKeyDown={this.navSlide}>
+							<div className="Line1" />
+							<div className="Line2" />
+							<div className="Line3" />
 						</div>
 					</nav>
 				</div>
