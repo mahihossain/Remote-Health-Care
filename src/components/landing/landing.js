@@ -11,7 +11,7 @@ class App extends Component {
 				</div>
 				<div className={styles.is_5}>
 					<div className={styles.tagLine}>
-						<h1>Giant ass Tagline, A little bit more.</h1>
+						<h1>Giant Tagline, A little bit more.</h1>
 						<h1>We Care</h1>
 					</div>
 				</div>
