@@ -32,7 +32,7 @@
         "no-console": "off",
         "no-unused-vars": "warn",
         "indent": [
-            "error",
+            "off",
             "tab"
         ],
         "react/jsx-filename-extension": [
@@ -47,8 +47,10 @@
         "no-plusplus": ["warn", {
             "allowForLoopAfterthoughts": true
         }],
-        "react/jsx-indent": ["warn", "tab"],
+        "react/jsx-indent": ["off", "tab"],
         "react/jsx-fragments": ["off"],
-        "react/jsx-indent-props": "off"
+        "react/jsx-indent-props": "off",
+        "import/no-named-as-default": 0,
+        "react/destructuring-assignment": [1, "never"]
     }
 }

@@ -1,16 +1,16 @@
 /* Main div */
 .ClientReview {
-  width: 70%;
-  margin: 16px auto;
-  padding: 16px;
-  text-align: center;
-  position: relative;
-  display: block;
+    width: 100%;
+    margin: 16px auto;
+    padding: 16px;
+    text-align: center;
+    position: relative;
+    display: block;
 }
 
 .ClientReview h1 {
-  color: #853AA1;
-  font-family: cursive;
+    color: #853aa1;
+    font-family: cursive;
 }
 
 /* Code for backgroud image of the main div */
@@ -29,8 +29,8 @@
 
 /* Media queries; for parallax effect comment out this section */
 @media (min-width: 500px) {
-  .ClientReview {
-      width: 700px;
-      height: 500px;
+    .ClientReview {
+        width: 60%;
+        height: auto;
     }
 }

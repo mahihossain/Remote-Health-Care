@@ -64,6 +64,8 @@ body {
         justify-content: space-around;
         width: 35%;
 
+
+
         @include media ("<desktop") {
             width: 45%;
         }
