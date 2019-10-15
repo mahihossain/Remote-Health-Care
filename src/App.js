@@ -10,17 +10,17 @@ import './App.scss';
 import 'normalize.css';
 
 class App extends Component {
-	render() {
-		return (
-			<React.Fragment>
-				<div className="stopOverflow">
-					<Nav />
-					<Landing />
-					<Footer />
-				</div>
-			</React.Fragment>
-		);
-	}
+    render() {
+        return (
+            <React.Fragment>
+                <div className="stopOverflow">
+                    <Nav />
+                    <Landing />
+                    <Footer />
+                </div>
+            </React.Fragment>
+        );
+    }
 }
 
 export default App;
