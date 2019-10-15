@@ -4,12 +4,12 @@
 .stopOverflow {
     overflow: hidden;
     position: relative;
-    height: 268vh;
+    height: 468vh;
 
     @include media(">tablet") {
         overflow: hidden;
         position: relative;
-        height: 177vh;
+        height: 477vh;
     }
 }
 
