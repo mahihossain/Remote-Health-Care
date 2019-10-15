@@ -6,6 +6,7 @@ import React, { Component } from 'react';
 import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
 import Landing from './components/landing/landing';
+import Review from './components/Review/Review';
 import './App.scss';
 import 'normalize.css';
 
@@ -16,6 +17,7 @@ class App extends Component {
                 <div className="stopOverflow">
                     <Nav />
                     <Landing />
+                    <Review />
                     <Footer />
                 </div>
             </React.Fragment>

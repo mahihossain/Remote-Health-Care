@@ -1,0 +1,96 @@
+@import '../../include-media';
+@import '../../include-grid';
+
+.card {
+    margin: 5% auto;
+    max-width: 325px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+
+    img {
+        width: 65%;
+        height: auto;
+        margin-top: 5%;
+        margin-right: 12.5%;
+        margin-bottom: 5%;
+        margin-left: 12.5%;
+    }
+
+    p {
+        margin-top: 0%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        text-align: center;
+        font-style: italic;
+
+    }
+
+    @include media(">=tablet") {
+        display: flex;
+        margin: 5% 60px;
+        max-width: 77%;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        &:hover {
+            z-index: 1;
+            box-shadow: 0 8px 50px rgba(#000, 0.2);
+            transform: scale(1.05);
+            transition: box-shadow 0.2s ease,
+                transform 0.2s ease,
+                z-index 0s 0s ease;
+        }
+
+        img {
+            width: 25%;
+            height: auto;
+            margin: 3% 3%;
+        }
+
+        p {
+            margin-top: auto;
+            margin-right: 6%;
+            margin-bottom: auto;
+            margin-left: 0%;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+    }
+
+    @include media(">=desktop") {
+        display: flex;
+        margin: 5% 60px;
+        max-width: 70%;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        &:hover {
+            z-index: 1;
+            box-shadow: 0 8px 50px rgba(#000, 0.2);
+            transform: scale(1.05);
+            transition: box-shadow 0.2s ease,
+                transform 0.2s ease,
+                z-index 0s 0s ease;
+        }
+
+        img {
+            width: 25%;
+            height: auto;
+            margin: 3% 3%;
+        }
+
+        p {
+            margin-top: auto;
+            margin-right: 6%;
+            margin-bottom: auto;
+            margin-left: 0%;
+            text-align: left;
+            font-size: 1.4rem;
+
+        }
+    }
+}
