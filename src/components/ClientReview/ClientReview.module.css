@@ -1,0 +1,39 @@
+/* Main div */
+.ClientReview {
+  width: 70%;
+  margin: 16px auto;
+  padding: 16px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  text-align: center;
+  position: relative;
+  display: block;
+  padding-bottom: 100px;
+}
+
+.ClientReview h1 {
+  color: #853AA1;
+  font-family: cursive;
+}
+
+/* Code for backgroud image of the main div */
+.ClientReview::after {
+  content: "";
+  background: url("../../assets/ClientReview/review.jpg");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+}
+
+/* Media queries; for parallax effect comment out this section */
+@media (min-width: 500px) {
+  .ClientReview {
+      width: 700px;
+      height: 500px;
+    }
+}

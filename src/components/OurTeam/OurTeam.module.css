@@ -1,0 +1,34 @@
+.Team {
+  width: 905;
+  margin: 16px auto;
+  padding: 16px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+.Team h1 {
+  color: #853aa1;
+  font-family: cursive;
+}
+
+.Team::after {
+  content: '';
+  background: url('../../assets/ClientReview/review.jpg');
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+}
+
+@media (min-width: 500px) {
+  .Team {
+    width: 900px;
+  }
+}
