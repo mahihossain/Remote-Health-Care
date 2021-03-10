@@ -1,0 +1,165 @@
+.home-wr {
+  width: 100%;
+}
+
+.home-wr .logo {
+  padding: 0 0 0 80px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 24px;
+}
+
+.home-wr .h1-review {
+  margin-left: 150px;
+}
+
+.home-wr .h1-doc {
+  margin-left: 40px !important;
+}
+
+.home-wr .desktop-nav {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background: #3187f4;
+  font-size: 16px;
+  display: -ms-grid;
+  display: grid;
+  padding: 14px 0 0;
+  color: white;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.home-wr .desktop-nav .nav-btns {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 0 0 0 10px;
+}
+
+.home-wr .desktop-nav .nav-btns li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.home-wr .desktop-nav .user-bar {
+  -ms-grid-column-align: right;
+      justify-self: right;
+  padding: 0 50px 0 0;
+  font-size: 18px;
+}
+
+.home-wr .desktop-nav .auth-bar a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.home-wr .desktop-nav .username {
+  cursor: pointer;
+}
+
+.home-wr .desktop-nav .logout {
+  width: 80px;
+  text-align: center;
+  height: 35px;
+  background: #F75B4A;
+  border-radius: 10px;
+  float: right;
+  position: relative;
+  top: -4px;
+  margin-left: 15px;
+  line-height: 32px;
+}
+
+.home-wr h1 {
+  font-weight: 400;
+  position: relative;
+  margin: 30px 3% 0;
+}
+
+.home-wr .display-none {
+  display: none;
+}
+
+.home-wr .landing-board {
+  width: 100%;
+  margin-top: 50px;
+  height: 80vh;
+}
+
+.home-wr .landing-board .landing-bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 60vh;
+  opacity: .9;
+  background: #3187f4;
+}
+
+.home-wr .landing-board img {
+  width: 100%;
+  height: 60vh;
+  position: absolute;
+  z-index: -2;
+}
+
+.home-wr .landing-board p {
+  width: 50%;
+  position: relative;
+  left: 15%;
+  top: 74px;
+  font-size: 44px;
+  color: #f5f5f5;
+}
+
+.home-wr .landing-board button {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  border: none;
+  width: 220px;
+  height: 50px;
+  color: #fff;
+  background: #F75B4A;
+  font-size: 22px;
+}
+
+.home-wr .landing-board a {
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing_is_7__2iLqM {
+    margin: 20px 30px;
+  }
+  .find-doc-btn {
+    position: absolute;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 70vh !important;
+  }
+  .landing-board {
+    height: 75vh !important;
+  }
+  h1 {
+    position: relative;
+    left: 50%;
+    margin: 0 !important;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    text-align: center;
+  }
+  .msgl {
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=Home.css.map */
